@@ -2,44 +2,36 @@
 import streamlit as st
 import pandas as pd
 
-try:
-    from streamlit_extras.badges import badge
-    from streamlit_extras.metric_cards import style_metric_cards
-except ImportError:
-    st.warning("Installez streamlit-extras avec : pip install streamlit-extras")
-
-# Chargement des exercices
+# Chargement de la base d'exercices
 df_exos = pd.read_csv("base_exercices_musculation.csv")
 all_exercises = df_exos["Exercice"].tolist()
 
+# Initialisation de la session
 if "seances" not in st.session_state:
     st.session_state["seances"] = {
         j: [] for j in ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
     }
 
-st.set_page_config(page_title="Gymverse Pro", layout="centered")
-st.title("🏋️ Gymverse Coach")
-st.caption("Crée ta semaine d'entraînement avec style")
+# Config de la page
+st.set_page_config(page_title="Gymverse Coach", layout="centered")
+st.title("💪 Mon Coach - Gymverse Style")
+st.write("Bienvenue dans votre assistant personnel d'entraînement !")
+st.write("Ajoutez vos exercices, configurez vos séances et exportez votre programme hebdomadaire.")
 
-# Style du haut
-colA, colB = st.columns([2, 1])
-with colA:
-    st.subheader("Planifie ta séance journalière")
-with colB:
-    badge(type="github", name="Voir le dépôt", url="https://github.com", label="Projet")
+# Choix du jour
+jour = st.selectbox("📅 Choisis un jour :", list(st.session_state["seances"].keys()))
 
-# Sélection du jour
-jour = st.selectbox("📆 Choisis ton jour :", list(st.session_state["seances"].keys()))
-
-# Barre de recherche
-search = st.text_input("🔍 Recherche un exercice").lower()
+# Recherche
+search = st.text_input("🔍 Rechercher un exercice").lower()
 filtered = [e for e in all_exercises if search in e.lower()] if search else all_exercises
 
 if filtered:
-    selected = st.selectbox("🏋️ Exercice :", filtered)
+    selected = st.selectbox("🏋️ Sélectionne un exercice :", filtered)
     info = df_exos[df_exos["Exercice"] == selected].iloc[0]
 
-    st.info(f"Groupe : {info['Groupe']} | Équipement : {info['Équipement']} | Type : {info['Type']}")
+    st.markdown("**Groupe musculaire :** " + info["Groupe"])
+    st.markdown("**Équipement :** " + info["Équipement"])
+    st.markdown("**Type :** " + info["Type"])
 
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -49,7 +41,7 @@ if filtered:
     with col3:
         charge = st.text_input("Charge", "Poids du corps")
 
-    if st.button("➕ Ajouter"):
+    if st.button("Ajouter à la séance"):
         st.session_state["seances"][jour].append({
             "Groupe": info["Groupe"],
             "Exercice": selected,
@@ -57,23 +49,25 @@ if filtered:
             "Répétitions": reps,
             "Charge": charge
         })
-        st.success(f"{selected} ajouté au {jour}")
+        st.success(selected + " ajouté au " + jour)
 else:
-    st.warning("Aucun exercice trouvé.")
+    st.info("Aucun exercice trouvé.")
 
-# Affichage dynamique
-st.subheader(f"🗓️ Séance du {jour}")
+# Affichage
+st.subheader("📋 Séance du " + jour)
 df_jour = pd.DataFrame(st.session_state["seances"][jour])
 if not df_jour.empty:
-    st.data_editor(df_jour, num_rows="dynamic")
+    st.table(df_jour)
 else:
-    st.write("Aucun exercice pour ce jour.")
+    st.warning("Aucun exercice ajouté.")
 
 # Export Excel
-if st.button("💾 Export hebdo (.xlsx)"):
+if st.button("📁 Exporter programme complet (.xlsx)"):
     all_data = []
     for j, exos in st.session_state["seances"].items():
         for e in exos:
-            all_data.append({"Jour": j, **e})
+            row = {"Jour": j}
+            row.update(e)
+            all_data.append(row)
     pd.DataFrame(all_data).to_excel("programme_hebdo.xlsx", index=False)
-    st.success("Fichier programme_hebdo.xlsx exporté !")
+    st.success("Exporté dans programme_hebdo.xlsx")
