@@ -1,19 +1,39 @@
 Exercice,Groupe,Équipement,Type
-Développé couché,Pectoraux,Barre,Polyarticulaire
-Développé incliné,Pectoraux,Barre,Polyarticulaire
-Ecarté poulie,Pectoraux,Poulie,Isolation
-Pompes,Pectoraux,Poids du corps,Polyarticulaire
-Dips,Triceps,Barres parallèles,Polyarticulaire
-Tractions,Dos,Barre fixe,Polyarticulaire
-Rowing barre,Dos,Barre,Polyarticulaire
-Tirage vertical,Dos,Poulie,Polyarticulaire
-Leg curl allongé,Ischio-jambiers,Machine,Isolation
-Leg extension,Quadriceps,Machine,Isolation
-Presse à cuisses,Jambes,Machine,Polyarticulaire
-Fentes,Jambes,Haltères,Polyarticulaire
-Développé militaire,Épaules,Barre,Polyarticulaire
-Élévations latérales,Épaules,Haltères,Isolation
-Curl biceps,Biceps,Haltères,Isolation
-Barre au front,Triceps,Barre EZ,Isolation
-Crunch au sol,Abdominaux,Poids du corps,Isolation
-Gainage,Abdominaux,Poids du corps,Statique
+Fente avant jambe droite,Jambes,Poids du corps,Unilatéral
+Fente avant jambe gauche,Jambes,Poids du corps,Unilatéral
+Fente bulgare jambe droite,Jambes,Haltères,Unilatéral
+Fente bulgare jambe gauche,Jambes,Haltères,Unilatéral
+Presse à cuisse une jambe droite,Jambes,Machine,Unilatéral
+Presse à cuisse une jambe gauche,Jambes,Machine,Unilatéral
+Soulevé de terre jambe tendue droite,Ischio-jambiers,Haltères,Unilatéral
+Soulevé de terre jambe tendue gauche,Ischio-jambiers,Haltères,Unilatéral
+Leg curl une jambe droite,Ischio-jambiers,Machine,Unilatéral
+Leg curl une jambe gauche,Ischio-jambiers,Machine,Unilatéral
+Leg extension une jambe droite,Quadriceps,Machine,Unilatéral
+Leg extension une jambe gauche,Quadriceps,Machine,Unilatéral
+Mollets unilatéral jambe droite,Mollets,Poids du corps,Unilatéral
+Mollets unilatéral jambe gauche,Mollets,Poids du corps,Unilatéral
+Développé épaules un bras droit,Épaules,Haltère,Unilatéral
+Développé épaules un bras gauche,Épaules,Haltère,Unilatéral
+Élévation latérale bras droit,Épaules,Haltère,Unilatéral
+Élévation latérale bras gauche,Épaules,Haltère,Unilatéral
+Curl biceps bras droit,Biceps,Haltère,Unilatéral
+Curl biceps bras gauche,Biceps,Haltère,Unilatéral
+Curl marteau bras droit,Biceps,Haltère,Unilatéral
+Curl marteau bras gauche,Biceps,Haltère,Unilatéral
+Kickback bras droit,Triceps,Haltère,Unilatéral
+Kickback bras gauche,Triceps,Haltère,Unilatéral
+Rowing un bras droit,Dos,Haltère,Unilatéral
+Rowing un bras gauche,Dos,Haltère,Unilatéral
+Tirage poulie bras droit,Dos,Poulie,Unilatéral
+Tirage poulie bras gauche,Dos,Poulie,Unilatéral
+Pompes sur un bras bras droit,Pectoraux,Poids du corps,Unilatéral
+Pompes sur un bras bras gauche,Pectoraux,Poids du corps,Unilatéral
+Crunch oblique droit,Abdominaux,Poids du corps,Unilatéral
+Crunch oblique gauche,Abdominaux,Poids du corps,Unilatéral
+Gainage latéral droit,Abdominaux,Poids du corps,Statique
+Gainage latéral gauche,Abdominaux,Poids du corps,Statique
+Relevé de genou droit suspendu,Abdominaux,Barre fixe,Unilatéral
+Relevé de genou gauche suspendu,Abdominaux,Barre fixe,Unilatéral
+Développé couché un bras droit,Pectoraux,Haltère,Unilatéral
+Développé couché un bras gauche,Pectoraux,Haltère,Unilatéral
