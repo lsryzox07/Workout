@@ -75,3 +75,47 @@ Développé un bras au sol bras gauche,Pectoraux,Haltère,Unilatéral
 Relevé de genou gauche suspendu,Abdominaux,Barre fixe,Unilatéral
 Développé couché un bras droit,Pectoraux,Haltère,Unilatéral
 Développé couché un bras gauche,Pectoraux,Haltère,Unilatéral
+Exercice,Groupe,Équipement,Type
+Tractions,Dos,Barre fixe,Polyarticulaire
+Tractions prise serrée,Biceps,Barre fixe,Polyarticulaire
+Tractions prise large,Dos,Barre fixe,Polyarticulaire
+Tractions australiennes,Dos,Barre basse,Polyarticulaire
+Tractions pronation,Dos,Barre fixe,Polyarticulaire
+Tractions supination,Biceps,Barre fixe,Polyarticulaire
+Muscle-up,Full body,Barre fixe,Polyarticulaire
+Muscle-up assisted,Full body,Barre fixe,Polyarticulaire
+Pompes,Pectoraux,Poids du corps,Polyarticulaire
+Pompes diamant,Triceps,Poids du corps,Polyarticulaire
+Pompes larges,Pectoraux,Poids du corps,Polyarticulaire
+Pompes archers,Pectoraux,Poids du corps,Unilatéral
+Pompes pseudo planche,Épaules,Poids du corps,Polyarticulaire
+Pompes explosives,Pectoraux,Poids du corps,Plyométrique
+Pompes claquées,Pectoraux,Poids du corps,Plyométrique
+Pompes surélevées,Pectoraux,Poids du corps,Polyarticulaire
+Pompes hindoues,Épaules,Poids du corps,Polyarticulaire
+Pompes spiderman,Abdominaux,Poids du corps,Polyarticulaire
+Dips,Triceps,Barres parallèles,Polyarticulaire
+Dips explosifs,Triceps,Barres parallèles,Plyométrique
+Dips sur une barre,Pectoraux,Barre fixe,Polyarticulaire
+Squat,Quadriceps,Poids du corps,Polyarticulaire
+Jump squats,Jambes,Poids du corps,Plyométrique
+Squat pistol jambe droite,Jambes,Poids du corps,Unilatéral
+Squat pistol jambe gauche,Jambes,Poids du corps,Unilatéral
+Fente sautée,Jambes,Poids du corps,Plyométrique
+Tuck planche,Épaules,Poids du corps,Statique
+Planche complète,Épaules,Poids du corps,Statique
+Front lever,Dos,Poids du corps,Statique
+Back lever,Épaules,Poids du corps,Statique
+Human flag,Obliques,Poids du corps,Statique
+L-sit,Abdominaux,Poids du corps,Statique
+L-sit une jambe,Abdominaux,Poids du corps,Unilatéral
+Dragon flag,Abdominaux,Poids du corps,Statique
+Relevé de jambes suspendu,Abdominaux,Barre fixe,Isolation
+Relevé jambes alternées,Abdominaux,Barre fixe,Unilatéral
+Toes to bar,Abdominaux,Barre fixe,Polyarticulaire
+Skin the cat,Épaules,Barre fixe,Mobilité
+Elbow lever,Épaules,Poids du corps,Statique
+Wall handstand,Épaules,Mur,Statique
+Handstand push-up,Épaules,Mur,Polyarticulaire
+Handstand push-up libre,Épaules,Poids du corps,Polyarticulaire
+Planche lean,Épaules,Poids du corps,Statique
